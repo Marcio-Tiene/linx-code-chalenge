@@ -6,9 +6,7 @@ header {
 
   display: flex;
   flex-direction: column;
-  /* justify-content: center; */
   align-items: center;
-  /* padding-bottom: 50px; */
   padding-top: 69px;
 }
 
@@ -27,8 +25,8 @@ header::after {
 }
 
 header h1,
-p,
-h3 {
+header p,
+header h3 {
   color: var(--text-in-primary);
 }
 
@@ -71,7 +69,29 @@ header p {
 }
 
 main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   height: 1000px;
+
+  color: var(--text-in-bg-color);
+}
+
+main p {
+  letter-spacing: 0px;
+  font-size: 0.75rem;
+  line-height: 1.25rem;
+  padding-top: 1.25rem;
+}
+
+main article {
+  width: 520px;
+}
+
+#help-algorithm {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: row;
 }
 
 footer {
