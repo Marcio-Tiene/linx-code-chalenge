@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="reset.css" />
     <link rel="stylesheet" href="index.css" />
-    <title>Ofertas espciais para você</title>
+    <title>Ofertas esepciais para você</title>
   </head>
   <body>
     <header>
@@ -49,12 +49,40 @@
             mattis augue est vel metus.
           </p>
         </article>
-        <article></article>
+        <fieldset>
+          <label for="register-name"> Seu nome:</label>
+          <input id="register-name" class="input-field" type="text" />
+          <label for="register-email">E-mail: </label>
+          <input id="register-email" class="input-field" type="email" />
+          <label for="register-cpf"> CPF:</label>
+          <input id="register-cpf" class="input-field" type="text" />
+          <div class="radio-buttons-container">
+            <div class="radio-button">
+              <input
+                id="male-radio-button"
+                type="radio"
+                name="gender"
+                value="Masculino"
+              />
+              <label for="male-radio-button">Masculino</label>
+            </div>
+            <div class="radio-button">
+              <input
+                id="female-radio-button"
+                type="radio"
+                name="gender"
+                value="Feminino"
+              />
+              <label for="female-radio-button">Feminino</label>
+            </div>
+          </div>
+          <button class="register-form-submit-button">Enviar</button>
+        </fieldset>
       </section>
       <section id="products"></section>
       <section id="share-news"></section>
     </main>
-    <footer id="z"></footer>
+    <footer></footer>
 
     <script src="index.js"></script>
   </body>

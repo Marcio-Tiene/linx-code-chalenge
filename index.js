@@ -9,4 +9,4 @@ function Test() {
   algorithmSection.appendChild(testH1);
 }
 
-Test();
+// Test();
