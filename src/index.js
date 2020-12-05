@@ -1,5 +1,6 @@
-const express = require('express');
+import express from 'express';
 const app = express();
+import nunjucks from 'nunjucks';
 
 const port = 3000;
 
@@ -7,7 +8,6 @@ app.use(express.static('public'));
 
 app.use(express.urlencoded({ extended: true }));
 
-const nunjucks = require('nunjucks');
 nunjucks.configure('src/views', {
   express: app,
   noCache: true,
