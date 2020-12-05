@@ -77,14 +77,6 @@ main {
   color: #888888;
 }
 
-#help-algorithm p {
-  letter-spacing: 0px;
-  font-size: 0.75rem;
-  line-height: 1.25rem;
-  margin-top: 1.25rem;
-  letter-spacing: 0px;
-}
-
 #help-algorithm {
   width: 100%;
   display: flex;
@@ -133,6 +125,7 @@ main {
   outline-color: var(--primary-bg-color);
   text-indent: 1ch;
   transition: linear 0.2s ease;
+  color: var(--text-in-bg-color);
 }
 
 #help-algorithm .input-field:hover {
