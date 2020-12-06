@@ -1,5 +1,8 @@
-var path = require('path');
+const path = require('path');
+
 module.exports = {
+  entry: __dirname,
+
   output: {
     path: path.resolve(__dirname, 'public'),
     filename: 'script.js',
@@ -8,7 +11,7 @@ module.exports = {
     rules: [
       {
         test: /\.m?js$/,
-        exclude: /(node_modules|bower_components)/,
+        exclude: /(node_modules|bower_components|public)/,
         use: {
           loader: 'babel-loader',
           options: {

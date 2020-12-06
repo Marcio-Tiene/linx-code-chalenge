@@ -1,10 +1,6 @@
-import * as Yup from 'yup';
 const submitRegisterButton = document.querySelector(
   '.register-form-submit-button'
 );
-
-const schema = Yup.object().shape();
-console.log(schema);
 
 submitRegisterButton.onclick = newsLetterformData;
 
@@ -20,13 +16,13 @@ function newsLetterformData() {
     if (isMaleChecked) {
       const gender = getInputValueByID('male-radio-button');
       return gender;
-    } else if (isFemaleChecked) {
+    }
+    if (isFemaleChecked) {
       const gender = getInputValueByID('female-radio-button');
       return gender;
-    } else {
-      const gender = 'NOT_DEFINED';
-      return gender;
     }
+    const gender = 'NOT_DEFINED';
+    return gender;
   };
   const formData = {
     name,
