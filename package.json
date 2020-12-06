@@ -2,5 +2,16 @@
   "name": "linx-code-chalenge",
   "version": "1.0.0",
   "main": "index.js",
-  "license": "MIT"
+  "license": "MIT",
+  "dependencies": {
+    "@babel/preset-env": "^7.12.7",
+    "babel-loader": "^8.2.2",
+    "webpack": "^5.10.0",
+    "yup": "^0.32.1"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.12.9",
+    "eslint": "^7.15.0",
+    "webpack-cli": "^4.2.0"
+  }
 }

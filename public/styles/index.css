@@ -1,7 +1,7 @@
 header {
   position: relative;
   height: 400px;
-  width: 100%;
+  width: 100vw;
   background: var(--primary-bg-color) 0% 0% no-repeat padding-box;
 
   display: flex;
