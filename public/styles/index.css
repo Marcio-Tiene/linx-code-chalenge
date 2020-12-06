@@ -120,7 +120,7 @@ main {
 #help-algorithm .input-field {
   height: 30px;
   width: 100%;
-  margin-bottom: 20px;
+
   border-radius: 0px;
   border: 1px solid var(--primary-bg-color);
   outline-color: var(--primary-bg-color);
@@ -133,12 +133,19 @@ main {
   border: 2px solid var(--primary-bg-color);
   border-radius: 4px;
 }
+#help-algorithm .error-warning {
+  align-self: flex-end;
 
+  height: 11px;
+  margin-bottom: 9px;
+  font-size: 0.6875rem;
+  color: red;
+  margin-top: 0;
+}
 #help-algorithm .radio-buttons-container {
   display: flex;
   flex-direction: row;
   gap: 40px;
-  margin-bottom: 23px;
 }
 
 #help-algorithm .radio-button label,
@@ -148,6 +155,7 @@ main {
 
 .register-form-submit-button {
   outline: none;
+  margin-top: 13px;
   background: var(--bg-color) 0% 0% no-repeat padding-box;
   color: var(--text-in-bg-color);
   font-size: 1rem;

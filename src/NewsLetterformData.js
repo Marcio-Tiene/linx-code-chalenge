@@ -1,12 +1,12 @@
 import GetInputValueByID from './GetInputValueByID';
-import { FemaleRaioButton, MaleRadioButton } from './GetHtmlElements';
+import { FemaleRadioButton, MaleRadioButton } from './GetHtmlElements';
 
 function NewsLetterformData() {
   const name = GetInputValueByID('register-name');
   const email = GetInputValueByID('register-email');
   const cpf = GetInputValueByID('register-cpf');
   const isMaleChecked = MaleRadioButton.checked;
-  const isFemaleChecked = FemaleRaioButton.checked;
+  const isFemaleChecked = FemaleRadioButton.checked;
 
   const radioInputValue = () => {
     if (isMaleChecked) {

@@ -52,10 +52,13 @@
         <fieldset>
           <label for="register-name"> Seu nome:</label>
           <input id="register-name" class="input-field" type="text" />
+          <p id="nameError" class="error-warning"></p>
           <label for="register-email">E-mail: </label>
           <input id="register-email" class="input-field" type="email" />
+          <p id="emailError" class="error-warning"></p>
           <label for="register-cpf"> CPF:</label>
           <input id="register-cpf" class="input-field" type="text" />
+          <p id="cpfError" class="error-warning"></p>
           <div class="radio-buttons-container">
             <div class="radio-button">
               <input
@@ -76,6 +79,7 @@
               <label for="female-radio-button">Feminino</label>
             </div>
           </div>
+          <p id="genderError" class="error-warning"></p>
           <button class="register-form-submit-button">Enviar</button>
         </fieldset>
       </section>
