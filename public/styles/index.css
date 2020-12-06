@@ -170,12 +170,18 @@ main {
 
 footer {
   position: relative;
+
   height: 293px;
-  width: 100%;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end;
+  padding-bottom: 86px;
   background: var(--primary-bg-color) 0% 0% no-repeat padding-box;
 }
 
-footer::after {
+footer::before {
   top: 0;
   content: '';
   position: absolute;
@@ -187,4 +193,10 @@ footer::after {
   border-bottom: 100px solid var(--primary-bg-color);
   border-left: 0 solid transparent;
   border-right: 100vw solid transparent;
+}
+
+footer p {
+  font-size: 0.75rem;
+  line-height: 1.125rem;
+  color: var(--text-in-primary);
 }

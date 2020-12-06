@@ -1,41 +1,20 @@
+import NewsLetterformData from './src/NewsLetterformData';
+import NLvalidationSchema from './src/NLvalidationSchema';
+
 const submitRegisterButton = document.querySelector(
   '.register-form-submit-button'
 );
 
-submitRegisterButton.onclick = newsLetterformData;
+const ValidationTest = async () => {
+  const data = NewsLetterformData();
+  const { cpf } = data;
+  const formateData = { ...data, cpf: Number(cpf) };
+  try {
+    await NLvalidationSchema.validate(formateData, { abortEarly: false });
+    console.log(formateData);
+  } catch (err) {
+    console.log(err.errors);
+  }
+};
 
-function newsLetterformData() {
-  const name = getInputValueByID('register-name');
-  const email = getInputValueByID('register-email');
-  const cpf = getInputValueByID('register-cpf');
-  const isMaleChecked = document.getElementById('male-radio-button').checked;
-  const isFemaleChecked = document.getElementById('female-radio-button')
-    .checked;
-
-  const radioInputValue = () => {
-    if (isMaleChecked) {
-      const gender = getInputValueByID('male-radio-button');
-      return gender;
-    }
-    if (isFemaleChecked) {
-      const gender = getInputValueByID('female-radio-button');
-      return gender;
-    }
-    const gender = 'NOT_DEFINED';
-    return gender;
-  };
-  const formData = {
-    name,
-    email,
-    cpf,
-    gender: radioInputValue(),
-  };
-  console.log(formData);
-  return formData;
-}
-
-function getInputValueByID(inputId) {
-  const input = document.getElementById(inputId);
-  const inputValue = input.value;
-  return inputValue;
-}
+submitRegisterButton.onclick = ValidationTest;
