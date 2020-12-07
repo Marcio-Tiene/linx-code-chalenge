@@ -15,3 +15,8 @@ export function ResetNlForm() {
   ResetRadiobuttons('male-radio-button');
   ResetRadiobuttons('female-radio-button');
 }
+
+export function ResetIFForm() {
+  ResetInputValues('friend-name');
+  ResetInputValues('friend-email');
+}

@@ -6,7 +6,7 @@ import {
   MaleRadioButton,
   FemaleRadioButton,
 } from './GetHtmlElements';
-const erroWarningPrint = (error, tagId) => {
+export const erroWarningPrint = (error, tagId) => {
   if (error) {
     const errorWarning = getErrorWarningElement(tagId);
     errorWarning.innerHTML = '';

@@ -1,9 +1,15 @@
-import { submitRegisterButton } from './src/GetHtmlElements';
+import {
+  InviteFriendButton,
+  submitRegisterButton,
+} from './src/GetHtmlElements';
+import InviteAFriend from './src/InviteFriend';
 import LoadProductslist from './src/LoadProductList';
 
 import SignUp from './src/SignUp';
 
 submitRegisterButton.onclick = SignUp;
+
+InviteFriendButton.onclick = InviteAFriend;
 
 // let EndPoint =
 //   'frontend-intern-challenge-api.iurykrieger.now.sh/products?page=1';
