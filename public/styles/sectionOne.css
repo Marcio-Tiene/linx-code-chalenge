@@ -98,11 +98,19 @@
 
 @media (max-width: 1000px) {
   #help-algorithm {
-    width: 100%;
-    display: flex;
+    width: 90vw;
     flex-direction: column;
-    gap: 60px;
-    justify-content: center;
-    margin-top: 20px;
+    align-items: center;
+  }
+  #help-algorithm article {
+    width: 90vw;
+  }
+  #help-algorithm fieldset {
+    border: none;
+    width: 90vw;
+
+    display: flex;
+
+    flex-direction: column;
   }
 }
