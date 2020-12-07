@@ -1,12 +1,14 @@
-function Test() {
-  const algorithmSection = document.getElementById('help-algorithm');
-  console.log(algorithmSection);
-  const testH1 = document.createElement('h1');
-  const testH1Text = document.createTextNode('hello linx');
+import {
+  InviteFriendButton,
+  submitRegisterButton,
+} from './src/GetHtmlElements';
+import InviteAFriend from './src/InviteFriend';
 
-  testH1.appendChild(testH1Text);
+// eslint-disable-next-line no-unused-vars
+import LoadProductslist from './src/LoadProductList';
 
-  algorithmSection.appendChild(testH1);
-}
+import SignUp from './src/SignUp';
 
-// Test();
+submitRegisterButton.onclick = SignUp;
+
+InviteFriendButton.onclick = InviteAFriend;

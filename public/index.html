@@ -3,8 +3,13 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="reset.css" />
-    <link rel="stylesheet" href="index.css" />
+    <link rel="stylesheet" href="styles/reset.css" />
+    <link rel="stylesheet" href="styles/header.css" />
+    <link rel="stylesheet" href="styles/main.css" />
+    <link rel="stylesheet" href="styles/sectionOne.css" />
+    <link rel="stylesheet" href="styles/sectionTwo.css" />
+    <link rel="stylesheet" href="styles/sectionThree.css" />
+    <link rel="stylesheet" href="styles/footer.css" />
     <title>Ofertas esepciais para você</title>
   </head>
   <body>
@@ -16,14 +21,21 @@
         navegação. Aproveite!
       </p>
       <div class="header-button-container">
-        <button>Conheça a Linx</button>
-        <a href="#z">
+        <a href="https://www.linx.com.br/" target="_blank">
+          <button>Conheça a Linx</button>
+        </a>
+        <a href="#help-algorithm">
           <button>Ajude o algorítimo</button>
         </a>
-        <button>Seus produtos</button>
-        <button>Compartilhe</button>
+        <a href="#products">
+          <button>Seus produtos</button>
+        </a>
+        <a href="#share-news">
+          <button>Compartilhe</button>
+        </a>
       </div>
     </header>
+
     <main>
       <section id="help-algorithm">
         <article>
@@ -52,10 +64,13 @@
         <fieldset>
           <label for="register-name"> Seu nome:</label>
           <input id="register-name" class="input-field" type="text" />
+          <p id="nameError" class="error-warning"></p>
           <label for="register-email">E-mail: </label>
           <input id="register-email" class="input-field" type="email" />
+          <p id="emailError" class="error-warning"></p>
           <label for="register-cpf"> CPF:</label>
           <input id="register-cpf" class="input-field" type="text" />
+          <p id="cpfError" class="error-warning"></p>
           <div class="radio-buttons-container">
             <div class="radio-button">
               <input
@@ -76,14 +91,50 @@
               <label for="female-radio-button">Feminino</label>
             </div>
           </div>
+          <p id="genderError" class="error-warning"></p>
           <button class="register-form-submit-button">Enviar</button>
         </fieldset>
       </section>
-      <section id="products"></section>
-      <section id="share-news"></section>
+      <section id="products">
+        <div class="title-container">
+          <hr />
+          <h3 class="product-titles">Sua seleção especial</h3>
+          <hr />
+        </div>
+        <div id="products-list"></div>
+        <button id="show-more">Ainda mais produtos aqui!</button>
+      </section>
+      <section id="share-news">
+        <div class="title-container">
+          <hr />
+          <h3>Compartilhe a novidade</h3>
+          <hr />
+        </div>
+        <p>
+          Quer que seus amigos também ganhem a lista personalizada deles?
+          Preencha agora!
+        </p>
+        <div class="input-container">
+          <div class="input-box">
+            <label for="friend-name">Nome do seu amigo:</label>
+            <input id="friend-name" class="input-field" type="text" />
+            <p id="friendNameError" class="error-warning"></p>
+          </div>
+          <div class="input-box">
+            <label for="friend-email"> E-mail:</label>
+            <input id="friend-email" class="input-field" type="email" />
+            <p id="friendEmailError" class="error-warning"></p>
+          </div>
+        </div>
+        <button id="invite-friend">Enviar agora</button>
+      </section>
     </main>
-    <footer></footer>
+    <footer>
+      <p>Testando suas habilidades em HTML, CSS e JS.</p>
+      <p>Linx Impulse</p>
+      <p>2019</p>
+    </footer>
 
-    <script src="index.js"></script>
+    <script src="script.js"></script>
   </body>
 </html>
