@@ -1,6 +1,6 @@
 import api from 'axios';
 import Card from './Card';
-import { ProductList } from './GetHtmlElements';
+import { ProductList, ShowMore } from './GetHtmlElements';
 let EndPoint =
   'frontend-intern-challenge-api.iurykrieger.now.sh/products?page=1';
 
@@ -18,5 +18,7 @@ const LoadProductslist = async (apiEndPoint) => {
   }
 };
 LoadProductslist(EndPoint);
+
+ShowMore.onclick = () => LoadProductslist(EndPoint);
 
 export default LoadProductslist;

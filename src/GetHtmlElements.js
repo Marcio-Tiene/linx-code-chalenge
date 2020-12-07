@@ -8,6 +8,7 @@ export const submitRegisterButton = document.querySelector(
   '.register-form-submit-button'
 );
 export const ProductList = document.getElementById('products-list');
+export const ShowMore = document.getElementById('show-more');
 
 export const RadioButtonContainer = document.querySelector('.radio-button');
 
