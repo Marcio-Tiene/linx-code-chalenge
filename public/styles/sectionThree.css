@@ -15,6 +15,13 @@
   justify-content: space-between;
   align-items: center;
 }
+#share-news .title-container h3 {
+  padding: 0 5px;
+}
+#share-news .title-container hr {
+  width: 342.5px;
+}
+
 #share-news .input-container {
   margin-top: 39px;
   display: flex;
