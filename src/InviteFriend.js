@@ -1,7 +1,12 @@
 import * as Yup from 'yup';
+import {
+  FriendNameInput,
+  FrienEmailInput,
+  getErrorWarningElement,
+} from './GetHtmlElements';
 import GetInputValueByID from './GetInputValueByID';
 import { erroWarningPrint } from './NLErrorHandler';
-import { ResetIFForm } from './ResetInpitValues';
+import { ResetIFForm } from './ResetInputValues';
 
 const IFValidationSchema = Yup.object().shape({
   name: Yup.string().required({ nameError: 'O nome é necessário' }),
@@ -43,9 +48,13 @@ const InviteAFriend = async () => {
     );
     ResetIFForm();
   } catch (err) {
-    console.log(err.errors);
     IFErrorHandler(err.errors);
   }
 };
+
+FrienEmailInput.onclick = () =>
+  (getErrorWarningElement('friendEmailError').innerHTML = '');
+FriendNameInput.onclick = () =>
+  (getErrorWarningElement('friendNameError').innerHTML = '');
 
 export default InviteAFriend;
