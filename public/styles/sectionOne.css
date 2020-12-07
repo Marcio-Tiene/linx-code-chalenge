@@ -95,3 +95,14 @@
   background: var(--bg-color) 0% 0% no-repeat padding-box;
   color: var(--text-in-bg-color);
 }
+
+@media (max-width: 1000px) {
+  #help-algorithm {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 60px;
+    justify-content: center;
+    margin-top: 20px;
+  }
+}

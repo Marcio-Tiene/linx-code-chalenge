@@ -40,30 +40,30 @@ hr {
   border: 1px solid var(--primary-bg-color);
   margin-bottom: 12px;
 }
-.product .product-name {
+#products .product .product-name {
   margin-bottom: 9px;
 }
 
-.product .product-desc {
+#products .product .product-desc {
   font-size: 0.75rem;
   line-height: 1rem;
   padding-bottom: 12px;
 }
 
-.product .high-price {
+#products .product .high-price {
   font-size: 0.75rem;
   line-height: 1rem;
   margin-bottom: 6px;
 }
 
-.product .sales-price {
+#products .product .sales-price {
   margin-bottom: 6px;
 }
-.product .installment-pay {
+#products .product .installment-pay {
   margin-bottom: 7px;
 }
 
-.product button {
+#products .product button {
   width: 200px;
   height: 30px;
   color: var(--text-in-bg-color);
