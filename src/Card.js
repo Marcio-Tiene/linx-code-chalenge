@@ -19,20 +19,26 @@ function Card(product) {
   card.appendChild(productDesc);
 
   const productHighPrice = document.createElement('p');
-  productHighPrice.className = '"high-price"';
-  productHighPrice.innerHTML = product.oldPrice.toFixed(2);
+  productHighPrice.className = 'high-price';
+  productHighPrice.innerHTML = `De: R$${product.oldPrice
+    .toFixed(2)
+    .split('.')
+    .join(',')}`;
   card.appendChild(productHighPrice);
 
-  const productSalesPrice = document.createElement('p');
+  const productSalesPrice = document.createElement('h3');
   productSalesPrice.className = 'sales-price';
-  productSalesPrice.innerHTML = product.price;
+  productSalesPrice.innerHTML = `Por: R$${product.price
+    .toFixed(2)
+    .split('.')
+    .join(',')}`;
   card.appendChild(productSalesPrice);
 
   const productInstallment = document.createElement('p');
   productInstallment.className = 'installment-pay';
-  productInstallment.innerHTML = `ou ${
-    product.installments.count
-  } de R$${product.installments.value.toFixed(2).replace(/./i, ',')}`;
+  productInstallment.innerHTML = `ou ${product.installments.count.toFixed(
+    0
+  )}x de R$${product.installments.value.toFixed(2).split('.').join(',')}`;
   card.appendChild(productInstallment);
 
   const productBuyButton = document.createElement('button');

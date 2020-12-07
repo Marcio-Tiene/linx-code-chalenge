@@ -24,6 +24,7 @@ hr {
 #products-list {
   width: 920px;
   display: grid;
+  place-items: center;
   grid-template-columns: auto auto auto auto;
   gap: 39px 41px;
 }
@@ -40,30 +41,30 @@ hr {
   border: 1px solid var(--primary-bg-color);
   margin-bottom: 12px;
 }
-.product .product-name {
+#products .product .product-name {
   margin-bottom: 9px;
 }
 
-.product .product-desc {
+#products .product .product-desc {
   font-size: 0.75rem;
   line-height: 1rem;
   padding-bottom: 12px;
 }
 
-.product .high-price {
+#products .product .high-price {
   font-size: 0.75rem;
   line-height: 1rem;
   margin-bottom: 6px;
 }
 
-.product .sales-price {
+#products .product .sales-price {
   margin-bottom: 6px;
 }
-.product .installment-pay {
+#products .product .installment-pay {
   margin-bottom: 7px;
 }
 
-.product button {
+#products .product button {
   width: 200px;
   height: 30px;
   color: var(--text-in-bg-color);
@@ -109,4 +110,29 @@ hr {
   background: var(--bg-color) 0% 0% no-repeat padding-box;
   box-shadow: 0px 0px 0px #00000029;
   border: 1px solid var(--primary-bg-color);
+}
+
+@media (max-width: 1000px) {
+  #products-list {
+    width: 90%;
+    display: grid;
+    grid-template-columns: auto auto;
+    gap: 39px 41px;
+  }
+  #products .title-container {
+    width: 96vw;
+  }
+
+  hr {
+    width: calc(47vw - 6.4rem);
+  }
+}
+
+@media (max-width: 700px) {
+  #products-list {
+    width: 100%;
+    display: grid;
+    grid-template-columns: auto;
+    gap: 39px 41px;
+  }
 }
