@@ -7,6 +7,7 @@ export const NLCpfInput = document.getElementById('register-cpf');
 export const submitRegisterButton = document.querySelector(
   '.register-form-submit-button'
 );
+export const ProductList = document.getElementById('products-list');
 
 export const RadioButtonContainer = document.querySelector('.radio-button');
 

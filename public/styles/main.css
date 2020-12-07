@@ -5,5 +5,5 @@ main {
 
   min-height: calc(100vh - 693px);
 
-  color: var(var(--text-in-bg-color));
+  color: var(--text-in-bg-color);
 }
