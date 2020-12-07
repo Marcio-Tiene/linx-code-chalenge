@@ -8,14 +8,20 @@ const NLvalidationSchema = Yup.object().shape({
     .required({ emailError: 'É necessário um e-mail valido' })
     .email({ emailError: 'Esse e-mail é invalido' })
     .max(100, { emailError: 'O máximo de caracteres é 100' }),
-  cpf: Yup.number({ cpfError: 'O Cpf deve conter apenas numeros' })
-    .min(1, { cpfError: 'O Cpf é necessário' })
-    .max(99999999999, { cpfError: 'O Cpf deve ter no maximo 11 digitos' }),
-  gender: Yup.string()
-    .required()
-    .equals(['Masculino', 'Feminino'], {
-      genderError: 'Escolha entre Masculino ou Feminino',
-    }),
+  cpf: Yup.string()
+    .test({
+      name: 'number',
+      message: { cpfError: 'O Cpf deve ter só numeros' },
+      test: (value) =>
+        !isNaN(Number(value)) &&
+        Number(value) !== 0 &&
+        Number(value) % parseInt(value) === 0,
+    })
+    .required({ cpfError: 'O Cpf é necessário' })
+    .max(11, { cpfError: 'O Cpf deve ter no maximo 11 digitos' }),
+  gender: Yup.string().required().equals(['Masculino', 'Feminino'], {
+    genderError: 'Escolha entre Masculino ou Feminino',
+  }),
 });
 
 export default NLvalidationSchema;
