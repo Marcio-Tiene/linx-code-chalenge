@@ -3,6 +3,9 @@
   "version": "1.0.0",
   "main": "index.js",
   "license": "MIT",
+  "scripts": {
+    "dev": "yarn webpack --watch"
+  },
   "dependencies": {
     "@babel/preset-env": "^7.12.7",
     "axios": "^0.21.0",
@@ -15,6 +18,7 @@
     "@babel/plugin-transform-runtime": "^7.12.1",
     "@babel/runtime": "^7.12.5",
     "eslint": "^7.15.0",
+    "open": "^7.3.0",
     "webpack-cli": "^4.2.0"
   }
 }
