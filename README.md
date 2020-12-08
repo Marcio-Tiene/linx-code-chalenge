@@ -2,11 +2,11 @@
 
 #### Published on netlify at this [link](https://gracious-einstein-0d8015.netlify.app/)
 
-This project was developed for the technical challenge of the selection process for the frontend developer position at [Linx](https://www.linx.com.br/).
+This project was developed for the technical challenge of the selection process to a frontend developer position at [Linx](https://www.linx.com.br/).
 
-The goal of the project was to build a landing page using this [mock](https://xd.adobe.com/spec/4025e242-a495-4594-71d2-5fd89d774b57-3614/specs/), using this [public api](https://frontend-intern-challenge-api.iurykrieger.now.sh/products?page=1) for dynamic modification of the page, validating the forms, and using only Javascript, CSS HTML avoiding the use of frontend development frameworks and using semantic tags from HTMl 5. As I didn't have a post route in the challenge, in the success form send I created an alert showing the information sent.
+The goal of the project was to build a landing page using this [mock](https://xd.adobe.com/spec/4025e242-a495-4594-71d2-5fd89d774b57-3614/specs/), using this [public api](https://frontend-intern-challenge-api.iurykrieger.now.sh/products?page=1) for dynamic modification of the page, validating the forms, and using only Javascript, CSS HTML avoiding the use of frontend development frameworks and using semantic tags from HTMl 5. As I didn't have a post route in the challenge, on the success form send I created an alert showing the information sent.
 
-In this project I use the webpack together with babel to work with modular javascript, in addition I used the yup library for validating forms and the axios library for http requests in the public api.
+In this project I use the webpack together with babel to work with modular es6+ javascript, in addition I used the yup library for validating forms and the axios library for http requests in the public api.
 
 # Setting Up the project.
 
@@ -40,6 +40,6 @@ To use this project on your enviroment, follow these steps:
    $ npm run dev
    ```
 
-5. open the index.html file from the public folder in your browser one with a html server of your choice, I use the vscode live server.
+5. open the index.html file from the public folder in your browser or with a html server of your choice, I use the vscode live server.
 
 ### You can now use and modify the project at your discretion.
