@@ -12,7 +12,7 @@ const SignUp = async () => {
     const formateData = { ...data, cpf: Number(cpf) };
 
     alert(
-      `Parabéns   ${formateData.name}, você foi cadastrado com sucesso \nemail: ${formateData.email} \nCPF: ${formateData.email} \nSexo: ${formateData.gender}`
+      `Parabéns   ${formateData.name}, você foi cadastrado com sucesso \nemail: ${formateData.email} \nCPF: ${formateData.cpf} \nSexo: ${formateData.gender}`
     );
     ResetNlForm();
   } catch (err) {

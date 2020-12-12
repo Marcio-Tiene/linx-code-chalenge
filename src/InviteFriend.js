@@ -44,7 +44,7 @@ const InviteAFriend = async () => {
     await IFValidationSchema.validate(data, { abortEarly: false });
 
     alert(
-      `Parabéns   ${data.name}, seu amigo foi convidado com sucesso \nemail: ${data.email} `
+      `Parabéns , seu amigo ${data.name} foi convidado com sucesso \nemail: ${data.email} `
     );
     ResetIFForm();
   } catch (err) {
